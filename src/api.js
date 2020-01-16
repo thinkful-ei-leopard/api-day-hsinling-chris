@@ -1,7 +1,8 @@
 const BASE_URL = 'https://thinkful-list-api.herokuapp.com/chris';
 
 function getItems(){
-    return Promise.resolve('A successful response!');
+  return  fetch(`${BASE_URL}/items`);
+    
 }
 
 export default {
