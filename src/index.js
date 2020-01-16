@@ -8,6 +8,7 @@ import shoppingList from './shopping-list';
 import store from './store';
 
 const main = function () {
+  
   api.getItems()
   .then(res => res.json())
   .then((items) => {
